@@ -1,0 +1,65 @@
+# Build outputs
+bin/
+obj/
+out/
+artifacts/
+publish/
+
+# VS/IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rider/JetBrains
+.idea/
+
+# DotCover/coverage
+*.coverage
+*.coveragexml
+TestResult*/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Publish profiles
+Properties/PublishProfiles/
+
+# Others
+ReSharper*/
+_ReSharper*/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.cache
+*.orig
+
+
