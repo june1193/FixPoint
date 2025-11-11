@@ -7,7 +7,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <AssemblyName>FixPoint</AssemblyName>
+    <Product>FixPoint</Product>
+    <AssemblyTitle>FixPoint (3D 멀미 방지 오버레이)</AssemblyTitle>
+    <Description>3D 게임용 시야 고정 오버레이</Description>
   </PropertyGroup>
+  <Target Name="GenerateAppIcon" BeforeTargets="BeforeBuild" Condition="!Exists('Assets\AppIcon.ico')">
+    <Message Text="Generating application icon (Assets\AppIcon.ico)..." Importance="high" />
+    <MakeDir Directories="Assets" Condition="!Exists('Assets')" />
+    <Exec Command="dotnet run --project ..\Tools\IconGen -- Assets\AppIcon.ico" />
+  </Target>
 </Project>
 
 
